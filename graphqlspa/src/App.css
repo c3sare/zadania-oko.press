@@ -1,0 +1,124 @@
+h1, h2 {
+  text-align: center;
+}
+
+input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px 15px 10px 35px;
+  margin: 0 auto;
+}
+
+.searchInputClass {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.searchInputClass .msg {
+  display: block;
+  position: absolute;
+  top:100%;
+  left: 28px;
+  font-size: 12px;
+}
+
+.searchInputClass input {
+  width: calc(100% - 50px);
+}
+
+.searchInputClass svg {
+  position: absolute;
+  top: 9px;
+  font-size: 18px;
+  left: 32px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px;
+}
+
+ul>li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+}
+
+ul>li>p>span {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+ul>li>p>span>svg {
+  width: 16px;
+  height: 16px;
+}
+
+span.color {
+  display: inline-block;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+}
+
+.lds-ellipsis {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
